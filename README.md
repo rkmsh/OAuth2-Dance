@@ -1,4 +1,4 @@
-# [Your Project Name]
+# OAuth2 Dance
 
 ## Table of Contents
 
@@ -71,8 +71,8 @@ Ensure the following requirements are met before starting:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-project-name.git
-    cd your-project-name
+    git clone https://github.com/rkmsh/OAuth2-Dance.git
+    cd authserver
     ```
 
 2.  **Build the projects:**
@@ -96,25 +96,25 @@ Ensure the following requirements are met before starting:
 
 1.  **Start the Authorization Server:**
     ```bash
-    cd authorization-server-folder
+    cd authserver
     mvn spring-boot:run
     ```
 
 2.  **Start the Resource Server:**
     ```bash
-    cd resource-server-folder
+    cd authresource
     mvn spring-boot:run
     ```
 
 3.  **Start the Client Application:**
     ```bash
-    cd client-application-folder
+    cd authclient
     mvn spring-boot:run
     ```
 
 ## Usage
 
-1.  **Access the Client Application:** Open a browser and go to `http://localhost:[Client-Port]` (e.g., `http://localhost:8081`).
+1.  **Access the Client Application:** Open a browser and go to `http://localhost:[Client-Port]` (e.g., `http://localhost:8081/me`).
 2.  **Initiate Login:** The client application will likely redirect to the Authorization Server's login page.
 3.  **Authenticate and Authorize:** Enter the credentials of a registered user (e.g., `user` / `password`, {Link: according to this GitHub example https://github.com/dzinot/spring-boot-2-oauth2-authorization-jwt/blob/master/README.md}) and grant the client access to resources.
 4.  **Access Protected Resources:** The client application will use the access token from the Authorization Server to access the protected APIs on the Resource Server.
@@ -122,7 +122,7 @@ Ensure the following requirements are met before starting:
 
 ## Testing
 
-*   **(Describe how to run tests, e.g., unit tests, integration tests, using tools like JUnit or Postman collections: {Link: see this GitHub example https://github.com/hendisantika/spring-boot-security-oauth2-example}.)**
+*   **(Describe how to run tests, e.g., unit tests, integration tests, using tools like JUnit or Postman collections: {https://github.com/rkmsh/OAuth2-Dance}.)**
 
 ## Contributing
 
@@ -136,10 +136,5 @@ Contributions to this project are welcome. Follow these guidelines:
 
 ## License
 
-This project is licensed under the [Choose your License, e.g., MIT License] - see the {Link: LICENSE.txt file https://github.com/spring-projects/spring-boot/blob/master/LICENSE.txt} for details.
+This project is licensed under the [MIT License]
 
-## Contact
-
-*   **(Your Name/Organization Name)**
-*   **(Email Address)**
-*   **(GitHub Profile Link or Project Website)**
